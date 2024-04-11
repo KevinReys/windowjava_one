@@ -18,28 +18,62 @@ public class windowjava_one extends JFrame {
         setLocationRelativeTo(null); // Define a posição inicial da janela para o centro da tela
 
         // Cria um painel para conter os componentes
-        JPanel panel = new JPanel();
+        JPanel panel = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 10));
         panel.setLayout(new FlowLayout());
 
-        // Cria um botão
-        JButton button = new JButton("Clique Aqui!");
 
-        // Adiciona um listener para o botão
+        // Criação de botoões
+        JButton button = new JButton("Clique Aqui!");
+        JButton button2 = new JButton("Clique Aqui!");
+        JButton button3 = new JButton("Clique Aqui!");
+        JButton button4 = new JButton("Clique Aqui!");
+
+
+        // Adiciona um listener para o botão 1
         button.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(windowjava_one.this, "Olá, mundo!");
+                JOptionPane.showMessageDialog(windowjava_one.this, "Mensagem 1!");
             }
         });
 
+        // Adiciona um listener para o segundo botão 2
+        button2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(windowjava_one.this, "Mensagem 2");
+            }
+        });
+
+        // Adiciona um listener para o segundo botão 3
+        button3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(windowjava_one.this, "Mensagem 3");
+            }
+        });
+
+        // Adiciona um listener para o segundo botão 4
+        button4.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(windowjava_one.this, "Mensagem 4");
+            }
+        });
+
+
         // Adiciona o botão ao painel
-        panel.add(button);
+        panel.add(button); // Adição do primeiro botão ao painel;
+        panel.add(button2); // Adição do segundo botão ao painel;
+        panel.add(button3); // Adição do terceiro botão ao painel;
+        panel.add(button4); // Adição do quarto botão ao painel;
 
         // Adiciona o painel à janela
         add(panel);
 
         // Define a janela como visível após configurar todos os componentes
         setVisible(true);
+
+
     }
+
+
 
     public static void main(String[] args) {
         // Cria uma instância da classe SimpleJavaProject (que é uma janela)
