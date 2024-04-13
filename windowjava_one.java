@@ -12,7 +12,7 @@ import java.awt.event.ActionListener;
 public class windowjava_one extends JFrame {
 
     public windowjava_one() {
-        setTitle("Java project");
+        setTitle("Java project");""
         setSize(300, 200);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Define a ação padrão quando a janela é fechada para encerrar a aplicação
         setLocationRelativeTo(null); // Define a posição inicial da janela para o centro da tela
@@ -32,7 +32,8 @@ public class windowjava_one extends JFrame {
         // Adiciona um listener para o botão 1
         button.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(windowjava_one.this, "Mensagem 1!");
+                JOptionPane.showMessageDialog(windowjava_one.this, "Mensagem 1");
+
             }
         });
 
